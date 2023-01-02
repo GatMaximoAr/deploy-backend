@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:11
 LABEL "Author"="Gatica maximo"
 COPY target/APISpringBoot-0.0.1-SNAPSHOT.jar APISpringBoot-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/APISpringBoot-0.0.1-SNAPSHOT.jar"]
