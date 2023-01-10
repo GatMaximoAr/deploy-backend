@@ -49,7 +49,7 @@ public class LogicaExperiencia {
             
             if (!actService.existByActividad(actividad)) {
                     
-                System.out.println("si la acitividad no existe, la crea y genera la relacion ");
+               // System.out.println("si la acitividad no existe, la crea y genera la relacion ");
                     ActividadExp nuevaAct = new ActividadExp(actividad);
                     
                     actService.saveActividadExp(nuevaAct);
@@ -62,7 +62,7 @@ public class LogicaExperiencia {
                     
                 }else if (actService.existByActividad(actividad)) {
                     
-                    System.out.println("si la acitividad existe, solo genera la relacion ");
+                   // System.out.println("si la acitividad existe, solo genera la relacion ");
                     
                     ActividadExp act = actService.findByActividad(actividad);
             
@@ -125,7 +125,7 @@ public class LogicaExperiencia {
              
             if (!actService.existByActividad(actividad)) {
                     
-                System.out.println("si la acitividad no existe, la crea y genera la relacion ");
+               // System.out.println("si la acitividad no existe, la crea y genera la relacion ");
                     ActividadExp nuevaAct = new ActividadExp(actividad);
                     
                     actService.saveActividadExp(nuevaAct);
@@ -138,7 +138,7 @@ public class LogicaExperiencia {
                     
                 }else if (actService.existByActividad(actividad)) {
                     
-                    System.out.println("si la acitividad existe, solo genera la relacion ");
+                    //System.out.println("si la acitividad existe, solo genera la relacion ");
                     
                     ActividadExp act = actService.findByActividad(actividad);
             

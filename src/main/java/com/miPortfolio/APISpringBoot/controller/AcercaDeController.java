@@ -41,6 +41,12 @@ public class AcercaDeController {
     @Autowired private LogicaAcercaDe logicaAcercaDe;
     
     
+    @GetMapping
+    public String defaultMensaje() {
+        
+        return "API REST Portfolio Argentina programa - Backend - Gatica Maximo";
+    }
+    
     @GetMapping("/saludo")
     public String saludar() {
         return "Hola mundo";

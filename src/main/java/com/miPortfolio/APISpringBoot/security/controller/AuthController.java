@@ -81,7 +81,7 @@ public class AuthController {
     @PostMapping("/singIn")
     public ResponseEntity<JwtDto> login(@Validated @RequestBody LoginUsuario loginUsuario, BindingResult bindingResult) {
         
-        System.out.println("aca llego");
+        //System.out.println("llego a SignIn");
         
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(loginUsuario.getNombreUsuario(), loginUsuario.getPassword()));
